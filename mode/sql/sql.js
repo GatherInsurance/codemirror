@@ -224,7 +224,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     // }
     stream.backUp(stream.current().length - 2);
     // return stream.eatWhile(/\w/) || stream.eatWhile(/^[\{\}]/) ? "variable-3" : null;
-    return stream.eatWhile(/[\w\}]/) ? "variable-3" : null;
+    return stream.eatWhile(/[\w\}]/) ? "parameter" : null;
   }
 
   // "identifier"
